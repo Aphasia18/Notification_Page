@@ -1,0 +1,237 @@
+:root{
+    --clr-primary-red: hsl(1, 90%, 64%);
+    --clr-primary-blue: hsl(219, 85%, 26%);
+
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-very-light-grayish-blue: hsl(210, 60%, 98%);
+    --clr-neutral-light-grayish-blue1:hsl(211, 68%, 94%);
+    --clr-neutral-light-grayish-blue2:hsl(205, 33%, 90%);
+    --clr-neutral-grayish-blue:hsl(219, 14%, 63%);
+    --clr-neutral-dark-grayish-blue:hsl(219, 12%, 42%);
+    --clr-neutral-very-dark-blue:hsl(224, 21%, 14%);
+
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+}
+p{
+    font-size: 16px;
+    
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: var(--clr-neutral-very-light-grayish-blue);
+  color: var(--clr-neutral-dark-grayish-blue);
+  
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin-block: 2rem;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.notifiaction-page-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 2rem 0;
+}
+.notification-page-head-left{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--clr-neutral-very-dark-blue);
+}
+.notification-page-head-right{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--clr-neutral-dark-grayish-blue);
+}
+.notification-page-head-right:hover{
+    cursor: pointer;
+    color: var(--clr-primary-blue);
+}
+.unread-notification-count{
+    background-color: var(--clr-primary-blue);
+    color: var(--clr-neutral-white);
+    font-size: 1rem;
+    border-radius: 25%;
+    padding: 2px 10px 2px 10px;
+    margin-left: 1rem;
+}
+.profile-picture{
+    width: 3rem;
+    height: 3rem;
+}
+.your-profile-picture{
+    width: 3rem;
+    height: 3rem;
+    margin-left: 7.25rem;
+}
+.your-profile-picture:hover{
+    border: 3px solid var(--clr-neutral-light-grayish-blue2);
+    cursor: pointer;
+    border-radius: 8px;
+}
+.notification{
+    display: flex;
+    font-size: 0.92rem;
+    margin-block: 0.5rem;
+    padding: 1rem 0 1rem 1rem;
+}
+.unread-notification{
+    display: flex;
+    font-size: 0.92rem;
+    margin-block: 0.5rem;
+    padding: 1rem 0 1rem 1rem;
+    background-color: var(--clr-neutral-very-light-grayish-blue);
+    border-radius: 6px;
+}
+.notification-text{
+    padding-inline: 1rem;
+    font-size: 0.8rem;
+}
+.hasanuddin{
+    padding-inline: 1rem;
+    font-size: 0.8rem;
+}
+.hasanuddin-message{
+    border: 1px solid var(--clr-neutral-light-grayish-blue1);
+    font-size: 0.85rem;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    color: var(--clr-neutral-dark-grayish-blue);
+}
+.hasanuddin-message:hover{
+    background-color: var(--clr-neutral-light-grayish-blue2);
+    cursor: pointer;
+}
+.dot {
+    height: 7px;
+    width: 7px;
+    background-color: var(--clr-primary-red);
+    border-radius: 50%;
+    display: inline-block;
+}
+.username{
+    color: var(--clr-neutral-very-dark-blue);
+    font-weight: 800;
+}
+.post{
+    font-weight: 800;
+    color: var(--clr-neutral-dark-grayish-blue);
+}
+.username:hover{
+    cursor: pointer;
+    color: var(--clr-primary-blue);
+}
+.elapsed-time{
+    color:var(--clr-neutral-grayish-blue);
+}
+p{
+    color: var(--clr-neutral-dark-grayish-blue);
+    font-size: 16px;
+}
+.first-tournament{
+    font-weight: 800;
+    color: var(--clr-neutral-dark-grayish-blue);
+}
+.first-tournament:hover{
+    cursor: pointer;
+    color: var(--clr-primary-blue);
+}
+.chess-club{
+    font-weight: 800;
+    color: var(--clr-primary-blue);
+}
+.chess-club:hover{
+    cursor: pointer;
+    
+}
+
+@media (min-width: 37em) {
+    .notification-page-container{
+        width: 39rem;
+        padding: 1rem;
+        padding-inline: 2rem;
+        border-radius: 10px;
+        background-color: var(--clr-neutral-white);
+        
+    } 
+    
+ 
+
+
+}
+
+@media all and (max-width: 37em){
+    .notification-page-container{
+        margin:0;
+        padding:1rem;
+        position: static;
+        background-color: var(--clr-neutral-white);
+    }
+    .notifiaction-page-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 1rem 0;
+    }
+    .your-profile-picture{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: 1rem;
+    }
+    .unread-notification-count {
+        margin-left: 5px;
+    }
+    
+    body {
+        margin: 0;
+    }
+}
