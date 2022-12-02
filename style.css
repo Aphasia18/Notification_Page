@@ -131,6 +131,12 @@ h1 {
     background-color: var(--clr-neutral-very-light-grayish-blue);
     border-radius: 6px;
 }
+.active.unread-notification{
+    background-color: white;
+}
+.active.dot{
+    display: none;
+}
 .notification-text{
     padding-inline: 1rem;
     font-size: 0.8rem;
